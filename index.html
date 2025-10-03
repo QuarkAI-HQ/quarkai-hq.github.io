@@ -4,104 +4,106 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quark AI</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    .gradient-text {
-      background: linear-gradient(90deg, #3b82f6, #8b5cf6);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
+    body {
+      background-color: #000000;
+      color: #ffffff;
     }
-    
+    .bold-text {
+      font-weight: 900;
+    }
   </style>
 </head>
-<body class="bg-gray-100 font-['Poppins'] text-gray-800">
+<body class="font-['Poppins'] text-white">
   <!-- Header -->
-  <header class="bg-white shadow">
-    <nav class="container mx-auto px-4 py-4 flex justify-between items-center">
-      <h1 class="text-4xl font-['Montserrat'] font-extrabold gradient-text">QUARK AI</h1>
-      <div class="space-x-4">
-        <a href="#home" class="text-blue-600 hover:underline">Home</a>
-        <a href="#about" class="text-blue-600 hover:underline">About</a>
-        <a href="#projects" class="text-blue-600 hover:underline">Projects</a>
-        <a href="#contact" class="text-blue-600 hover:underline">Contact</a>
+  <header class="bg-black shadow">
+    <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
+      <h1 class="text-5xl font-['Montserrat'] font-black bold-text">QUARK AI</h1>
+      <div class="space-x-6">
+        <a href="#home" class="text-white hover:underline font-bold">Home</a>
+        <a href="#about" class="text-white hover:underline font-bold">About</a>
+        <a href="#projects" class="text-white hover:underline font-bold">Projects</a>
+        <a href="#contact" class="text-white hover:underline font-bold">Contact</a>
       </div>
     </nav>
   </header>
 
   <!-- Hero -->
-  <section id="home" class="bg-gradient-to-r from-blue-600 to-purple-600 text-white py-20">
+  <section id="home" class="bg-black text-white py-24">
     <div class="container mx-auto px-4 text-center">
-      <h2 class="text-5xl font-['Montserrat'] font-bold mb-4">Building the Next AI Stack</h2>
-      <p class="text-xl mb-6">Custom models, frameworks, and chips for faster, modular, explainable AI.</p>
-      <p class="text-lg mb-8">Next-gen AI frameworks & models for reasoning.</p>
-      <a href="#projects" class="bg-white text-blue-600 px-6 py-3 rounded-full font-semibold hover:bg-blue-100">Explore Projects</a>
+      <h2 class="text-6xl font-['Montserrat'] font-black bold-text mb-6">BUILDING THE NEXT AI STACK</h2>
+      <p class="text-2xl mb-8 font-bold">Custom models, frameworks, and chips for faster, modular, explainable AI.</p>
+      <p class="text-xl mb-10 font-semibold">Next-gen AI frameworks & models for reasoning.</p>
+      <a href="#projects" class="bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-200">EXPLORE PROJECTS</a>
     </div>
   </section>
 
   <!-- About -->
-  <section id="about" class="py-16">
+  <section id="about" class="bg-black py-20">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-['Montserrat'] font-bold text-center mb-8">About Quark AI</h2>
-      <p class="text-lg text-center max-w-2xl mx-auto">
-        Hi, I’m Dheeraj, a 15-year-old builder from Chennai, India. I’ve been hacking since age 6—building e-bikes, drones, and AI tools.
+      <h2 class="text-4xl font-['Montserrat'] font-black bold-text text-center mb-10">ABOUT QUARK AI</h2>
+      <p class="text-xl text-center max-w-3xl mx-auto font-semibold">
+        Hi, I’m Dheeraj, a 15-year-old builder. I’ve been hacking since age 6—building e-bikes, drones, and AI tools.
         Quark AI is my mission to redefine AI with Synapse-AI, Congming-AI, EasiScriptX, and Cortex chips for reasoning and robotics.
       </p>
     </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="bg-gray-200 py-16">
+  <section id="projects" class="bg-black py-20">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-['Montserrat'] font-bold text-center mb-8">Our Projects</h2>
-      <div class="grid md:grid-cols-2 gap-8">
-        <div class="bg-white p-6 rounded-lg shadow">
-          <h3 class="text-xl font-semibold mb-2">EasiScriptX</h3>
-          <p>Open-source DSL for AI/ML workflows, optimized for simplicity and performance (flash attention, mixed-precision).</p>
-          <a href="https://github.com/ProCoder1199X/EasiScriptX" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+      <h2 class="text-4xl font-['Montserrat'] font-black bold-text text-center mb-10">OUR PROJECTS</h2>
+      <div class="grid md:grid-cols-2 gap-10">
+        <div class="bg-gray-900 p-8 rounded-xl shadow-lg">
+          <h3 class="text-2xl font-bold mb-4">EASiSCRIPTX</h3>
+          <p class="text-lg mb-4 font-medium">Open-source DSL for AI/ML workflows, optimized for simplicity and performance (flash attention, mixed-precision).</p>
+          <a href="https://github.com/ProCoder1199X/EasiScriptX" target="_blank" class="text-white hover:underline font-bold">View on GitHub</a>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow">
-          <h3 class="text-xl font-semibold mb-2">Congming-AI</h3>
-          <p>Experimental neuro-symbolic framework for modular reasoning, designed to be interpretable and scalable.</p>
-          <a href="https://github.com/ProCoder1199X/Congming-AI" target="_blank" class="text-blue-600 hover:underline">View on GitHub</a>
+        <div class="bg-gray-900 p-8 rounded-xl shadow-lg">
+          <h3 class="text-2xl font-bold mb-4">CONGMING-AI</h3>
+          <p class="text-lg mb-4 font-medium">Experimental neuro-symbolic framework for modular reasoning, designed to be interpretable and scalable.</p>
+          <a href="https://github.com/ProCoder1199X/Congming-AI" target="_blank" class="text-white hover:underline font-bold">View on GitHub</a>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow">
-          <h3 class="text-xl font-semibold mb-2">Synapse-AI</h3>
-          <p>Early-stage hierarchical reasoning model, the core of Quark AI’s future products.</p>
-          <p class="text-gray-500">In development</p>
+        <div class="bg-gray-900 p-8 rounded-xl shadow-lg">
+          <h3 class="text-2xl font-bold mb-4">SYNAPSE-AI</h3>
+          <p class="text-lg mb-4 font-medium">Early-stage hierarchical reasoning model, the core of Quark AI’s future products.</p>
+          <p class="text-gray-400 font-medium">In development</p>
         </div>
-        <div class="bg-white p-6 rounded-lg shadow">
-          <h3 class="text-xl font-semibold mb-2">Cortex Series</h3>
-          <p>Custom AI chips designed for our Synapse-AI architecture, optimized for efficiency.</p>
-          <p class="text-gray-500">Coming soon</p>
+        <div class="bg-gray-900 p-8 rounded-xl shadow-lg">
+          <h3 class="text-2xl font-bold mb-4">CORTEX SERIES</h3>
+          <p class="text-lg mb-4 font-medium">Custom AI chips designed for our Synapse-AI architecture, optimized for efficiency.</p>
+          <p class="text-gray-400 font-medium">Coming soon</p>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Contact -->
-  <section id="contact" class="py-16">
+  <section id="contact" class="bg-black py-20">
     <div class="container mx-auto px-4 text-center">
-      <h2 class="text-3xl font-['Montserrat'] font-bold mb-8">Get in Touch</h2>
-      <p class="text-lg mb-4">Want to collaborate or learn more? Reach out!</p>
-      <p class="text-lg mb-4">Email: <a href="mailto:dheeraj1018279@gmail.com" class="text-blue-600 hover:underline">dheeraj1018279@gmail.com</a></p>
-      <div class="flex justify-center space-x-4">
-        <a href="https://x.com/DheerajKumar76x" target="_blank" class="text-blue-600 hover:underline">X/Twitter</a>
-        <a href="https://github.com/ProCoder1199X" target="_blank" class="text-blue-600 hover:underline">GitHub</a>
+      <h2 class="text-4xl font-['Montserrat'] font-black bold-text mb-10">GET IN TOUCH</h2>
+      <p class="text-xl mb-6 font-semibold">Want to collaborate or learn more? Reach out!</p>
+      <p class="text-xl mb-6 font-semibold">Email: <a href="mailto:dheeraj1018279@gmail.com" class="text-white hover:underline font-bold">dheeraj1018279@gmail.com</a></p>
+      <div class="flex justify-center space-x-6 mb-8">
+        <a href="https://x.com/DheerajKumar76x" target="_blank" class="text-white hover:underline font-bold">X/Twitter</a>
+        <a href="https://github.com/ProCoder1199X" target="_blank" class="text-white hover:underline font-bold">GitHub</a>
       </div>
-      <p class="mt-6">Join our waitlist for early access to EasiScriptX and updates!</p>
-      <a href="mailto:dheeraj1018279@gmail.com?subject=Quark AI Waitlist" class="bg-blue-600 text-white px-6 py-3 rounded-full font-semibold hover:bg-blue-700">Join Waitlist</a>
+      <p class="text-xl mb-6 font-semibold">Join our waitlist for early access to EasiScriptX and updates!</p>
+      <a href="mailto:dheeraj1018279@gmail.com?subject=Quark AI Waitlist" class="bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-200">JOIN WAITLIST</a>
     </div>
   </section>
 
   <!-- Footer -->
-  <footer class="bg-gray-800 text-white py-4">
+  <footer class="bg-black text-white py-6">
     <div class="container mx-auto px-4 text-center">
-      <p>© 2025 Quark AI. Founded by Dheeraj Kumar in Chennai, India.</p>
-      <div class="flex justify-center space-x-4 mt-2">
-        <a href="https://x.com/DheerajKumar76x" target="_blank" class="hover:underline">X</a>
-        <a href="https://github.com/ProCoder1199X" target="_blank" class="hover:underline">GitHub</a>
+      <p class="font-medium">© 2025 Quark AI. Founded by Dheeraj Kumar.</p>
+      <div class="flex justify-center space-x-6 mt-4">
+        <a href="https://x.com/DheerajKumar76x" target="_blank" class="hover:underline font-bold">X</a>
+        <a href="https://github.com/ProCoder1199X" target="_blank" class="hover:underline font-bold">GitHub</a>
       </div>
     </div>
   </footer>
 </body>
+</html>
