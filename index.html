@@ -4,15 +4,16 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Quark AI</title>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;900&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     body {
       background-color: #000000;
       color: #ffffff;
     }
-    .bold-text {
-      font-weight: 900;
+    .aggressive-text {
+      font-family: 'Bebas Neue', sans-serif;
+      letter-spacing: 0.05em;
     }
   </style>
 </head>
@@ -20,12 +21,12 @@
   <!-- Header -->
   <header class="bg-black shadow">
     <nav class="container mx-auto px-4 py-6 flex justify-between items-center">
-      <h1 class="text-5xl font-['Montserrat'] font-black bold-text">QUARK AI</h1>
+      <h1 class="text-6xl aggressive-text">QUARK AI</h1>
       <div class="space-x-6">
-        <a href="#home" class="text-white hover:underline font-bold">Home</a>
-        <a href="#about" class="text-white hover:underline font-bold">About</a>
-        <a href="#projects" class="text-white hover:underline font-bold">Projects</a>
-        <a href="#contact" class="text-white hover:underline font-bold">Contact</a>
+        <a href="#home" class="text-white hover:underline font-bold uppercase">Home</a>
+        <a href="#about" class="text-white hover:underline font-bold uppercase">About</a>
+        <a href="#projects" class="text-white hover:underline font-bold uppercase">Projects</a>
+        <a href="#contact" class="text-white hover:underline font-bold uppercase">Contact</a>
       </div>
     </nav>
   </header>
@@ -33,21 +34,19 @@
   <!-- Hero -->
   <section id="home" class="bg-black text-white py-24">
     <div class="container mx-auto px-4 text-center">
-      <h2 class="text-6xl font-['Montserrat'] font-black bold-text mb-6">BUILDING THE NEXT AI STACK</h2>
-      <p class="text-2xl mb-8 font-bold">Custom AI frameworks and models for faster, modular, and interpretable AI.</p>
-      <p class="text-xl mb-10 font-semibold">Focused on reasoning, efficiency, and rapid prototyping.</p>
-      <a href="#projects" class="bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-200">EXPLORE PROJECTS</a>
+      <h2 class="text-7xl aggressive-text mb-6"> ACCELERATING AI TO ITS FULL POTENTIAL </h2>
+      <p class="text-2xl mb-8 font-bold">At Quark AI, we believe AI should move forward, fast.</p>
+      <p class="text-xl mb-10 font-semibold"> Not slowed by overregulation or endless safety bureaucracy. Just the right guardrails. rapid progress towards AGI.</p>
+      <a href="#projects" class="bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-200 uppercase">Explore Projects</a>
     </div>
   </section>
 
   <!-- About -->
   <section id="about" class="bg-black py-20">
     <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-['Montserrat'] font-black bold-text text-center mb-10">ABOUT QUARK AI</h2>
+      <h2 class="text-5xl aggressive-text text-center mb-10">ABOUT QUARK AI</h2>
       <p class="text-xl text-center max-w-3xl mx-auto font-semibold">
-        Hi, I’m Dheeraj, a 15-year-old builder. I’ve been hacking since age 6—building e-bikes, drones, and AI tools. 
-        Quark AI combines research-driven AI frameworks, innovative DSLs, and experimental AI models to accelerate AI development. 
-        <strong>EasiScriptX</strong> allows anyone to quickly define and train models efficiently, solving common bottlenecks in traditional frameworks.
+        Quark AI is a research and development company dedicated to pushing the boundaries of artificial intelligence. Founded by Dheeraj Kumar, we focused on making ai reach its full potential.
       </p>
     </div>
   </section>
@@ -55,35 +54,34 @@
   <!-- Projects -->
   <section id="projects" class="bg-black py-20">
     <div class="container mx-auto px-4">
-      <h2 class="text-4xl font-['Montserrat'] font-black bold-text text-center mb-10">OUR PROJECTS</h2>
+      <h2 class="text-5xl aggressive-text text-center mb-10">OUR PROJECTS</h2>
       <div class="grid md:grid-cols-2 gap-10">
         <div class="bg-gray-900 p-8 rounded-xl shadow-lg">
-          <h3 class="text-2xl font-bold mb-4">EASiSCRIPTX</h3>
-          <p class="text-lg mb-4 font-medium">
-            Beginner-friendly DSL for AI/ML workflows. Simplifies model, dataset, and training definitions with a declarative syntax. Optimized with flash attention, mixed-precision, pipeline parallelism, and domain adaptation. Designed from scratch, not a wrapper — solves key PyTorch/TensorFlow inefficiencies.
-          </p>
-          <a href="https://github.com/ProCoder1199X/EasiScriptX" target="_blank" class="text-white hover:underline font-bold">View on GitHub</a>
+          <h3 class="text-3xl aggressive-text mb-4">EASiSCRIPTX</h3>
+          <p class="text-lg mb-4 font-medium">EasiScriptX (ESX) is a high-performance domain-specific language (DSL) designed for AI/ML workflows. It simplifies defining models, datasets, and training routines with a declarative syntax. It's human-readable , efficient, reduces development time..</p>
+          <p class="text-lg mb-4 font-medium">Key features include advanced tensor operations (matrix multiplication, convolution, pooling, normalization), distributed training with multi-GPU (NCCL) and multi-node (MPI) support, loading pretrained models via ONNX Runtime or PyTorch, custom loss functions and optimizers, profiling and debugging tools, autonomic optimization (model compression, multi-agent tuning), and extensibility for new layers and operations.</p>
+          <p class="text-lg mb-4 font-medium">It supports parameter-efficient fine-tuning (LoRA), high-performance attention (FlashAttention-2), mixed-precision training (BF16/FP16), pipeline parallelism, domain adaptation, energy-aware and heterogeneous scheduling, interoperability with PyTorch, TensorFlow, and JAX via ONNX, efficient data pipelines, experiment tracking with MLflow, and optimization for both high-end and low-end hardware.</p>
+          <p class="text-lg mb-4 font-medium">Built with C++20, Boost, Eigen, ONNX Runtime, OpenMPI, and optional CUDA. Currently at version 1.0, licensed under MIT. Ideal for hobbyists and enterprise workflows, reducing memory and energy usage.</p>
+          <a href="https://github.com/ProCoder1199X/EasiScriptX" target="_blank" class="text-white hover:underline font-bold uppercase">View on GitHub</a>
         </div>
         <div class="bg-gray-900 p-8 rounded-xl shadow-lg">
-          <h3 class="text-2xl font-bold mb-4">CONGMING-AI</h3>
-          <p class="text-lg mb-4 font-medium">
-            Modular, neuro-symbolic framework for interpretable AI. Designed for research and robotics applications, enabling efficient reasoning and scalability.
-          </p>
-          <a href="https://github.com/ProCoder1199X/Congming-AI" target="_blank" class="text-white hover:underline font-bold">View on GitHub</a>
+          <h3 class="text-3xl aggressive-text mb-4">CONGMING-AI</h3>
+          <p class="text-lg mb-4 font-medium">Congming AI is an experimental, modular, neuro-symbolic Artificial Intelligence Framework with a Multi Modular Multi Agent System, focused on advanced reasoning capabilities.</p>
+          <p class="text-lg mb-4 font-medium">It had successfuly modified some files of code by itself (about eight files) , and its capable of choosing an random topic and learning about it via internet (which we call ingest, it stores data in its database) and uses information whenever needed.</p>
+          <p class="text-lg mb-4 font-medium">Benchmarking shows Congming-2 with 43% pixel accuracy and ~30% task success on ARC-1, and Congming-3 with ~57% average pixel accuracy and 18% task success on ARC-AGI2 across ~200 tasks.</p>
+          <p class="text-lg mb-4 font-medium">Technologies include external API calls and local Hugging Face models.</p>
+          <p class="text-lg mb-4 font-medium">One of our main products, aiming for rapid, autonomous ai development with minimal restrictions.</p>
+          <a href="https://github.com/QuarkAI-HQ/Congming-AI" target="_blank" class="text-white hover:underline font-bold uppercase">View on GitHub</a>
         </div>
         <div class="bg-gray-900 p-8 rounded-xl shadow-lg">
-          <h3 class="text-2xl font-bold mb-4">SYNAPSE-AI</h3>
-          <p class="text-lg mb-4 font-medium">
-            Early-stage hierarchical reasoning model, forming the backbone for advanced AI systems at Quark AI. Focused on reasoning, efficiency, and multi-domain adaptability.
-          </p>
+          <h3 class="text-3xl aggressive-text mb-4">SYNAPSE-AI</h3>
+          <p class="text-lg mb-4 font-medium">Thinking of ai beyond traditional transformer architecture, we're desgining Synapse ai model entierly from scratch, for reasoning, not just token prediction. </p>
           <p class="text-gray-400 font-medium">In development</p>
         </div>
         <div class="bg-gray-900 p-8 rounded-xl shadow-lg">
-          <h3 class="text-2xl font-bold mb-4">CORTEX SERIES</h3>
-          <p class="text-lg mb-4 font-medium">
-            Future exploration: custom AI hardware for our models, intended to optimize performance and efficiency in long-term projects.
-          </p>
-          <p class="text-gray-400 font-medium">Coming soon</p>
+          <h3 class="text-3xl aggressive-text mb-4">CORTEX series of  Intelligence Accelerator Units</h3>
+          <p class="text-lg mb-4 font-medium">One of our long term goal, Custom AI chips designed for our Synapse-AI architecture, optimized for efficiency, power consumption, and high-performance computing in AI tasks.</p>
+          <p class="text-gray-400 font-medium"> Currenlty very early stage of design. </p>
         </div>
       </div>
     </div>
@@ -92,25 +90,22 @@
   <!-- Contact -->
   <section id="contact" class="bg-black py-20">
     <div class="container mx-auto px-4 text-center">
-      <h2 class="text-4xl font-['Montserrat'] font-black bold-text mb-10">GET IN TOUCH</h2>
+      <h2 class="text-5xl aggressive-text mb-10">GET IN TOUCH</h2>
       <p class="text-xl mb-6 font-semibold">Want to collaborate or learn more? Reach out!</p>
-      <p class="text-xl mb-6 font-semibold">Email: <a href="mailto:dheeraj1018279@gmail.com" class="text-white hover:underline font-bold">dheeraj1018279@gmail.com</a></p>
+      <p class="text-xl mb-6 font-semibold">Email: <a href="mailto:dheeraj1018279@gmail.com" class="text-white hover:underline font-bold">dheeraj293949@gmail.com</a></p>
       <div class="flex justify-center space-x-6 mb-8">
-        <a href="https://x.com/DheerajKumar76x" target="_blank" class="text-white hover:underline font-bold">X/Twitter</a>
-        <a href="https://github.com/ProCoder1199X" target="_blank" class="text-white hover:underline font-bold">GitHub</a>
-      </div>
-      <p class="text-xl mb-6 font-semibold">Join our waitlist for early access to EasiScriptX and updates!</p>
-      <a href="mailto:dheeraj1018279@gmail.com?subject=Quark AI Waitlist" class="bg-white text-black px-8 py-4 rounded-full font-bold text-lg hover:bg-gray-200">JOIN WAITLIST</a>
-    </div>
+        <a href="https://x.com/DheerajKumar76x" target="_blank" class="text-white hover:underline font-bold uppercase">X/Twitter</a>
+        <a href="https://github.com/ProCoder1199X" target="_blank" class="text-white hover:underline font-bold uppercase">GitHub</a>
+      
   </section>
 
   <!-- Footer -->
   <footer class="bg-black text-white py-6">
     <div class="container mx-auto px-4 text-center">
-      <p class="font-medium">© 2025 Quark AI. Founded by Dheeraj Kumar.</p>
+      <p class="font-medium">© 2025 Quark AI</p>
       <div class="flex justify-center space-x-6 mt-4">
-        <a href="https://x.com/DheerajKumar76x" target="_blank" class="hover:underline font-bold">X</a>
-        <a href="https://github.com/ProCoder1199X" target="_blank" class="hover:underline font-bold">GitHub</a>
+        <a href="https://x.com/QuarkAI_HQ" target="_blank" class="hover:underline font-bold uppercase">X</a>
+        <a href="https://github.com/QuarkAI-HQ" target="_blank" class="hover:underline font-bold uppercase">GitHub</a>
       </div>
     </div>
   </footer>
